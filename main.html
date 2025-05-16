@@ -1,16 +1,93 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Block or Inline Test</title>
+  <style>
+    /* Add some spacing for clarity */
+    div.block {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      font-family: Arial, sans-serif;
+    }
+    /* Make sure inline elements do not break lines */
+    [data-ns-test] {
+      margin-right: 8px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<!-- Button: Inline -->
+<div class="block">
+  <button data-ns-test="block-inline-button">Test1</button>
+  <button data-ns-test="block-inline-button">Test2</button>
+  <span>Answer: Inline</span>
+</div>
+
+<!-- Div: Block -->
+<div class="block">
+  <div data-ns-test="block-inline-div">Test1</div>
+  <div data-ns-test="block-inline-div">Test2</div>
+  <span>Answer: Block</span>
+</div>
+
+<!-- Span: Inline -->
+<div class="block">
+  <span data-ns-test="block-inline-span">Test1</span>
+  <span data-ns-test="block-inline-span">Test2</span>
+  <span>Answer: Inline</span>
+</div>
+
+<!-- P: Block -->
+<div class="block">
+  <p data-ns-test="block-inline-p">Test1</p>
+  <p data-ns-test="block-inline-p">Test2</p>
+  <span>Answer: Block</span>
+</div>
+
+<!-- Input: Inline -->
+<div class="block">
+  <input data-ns-test="block-inline-input" value="Test1" readonly />
+  <input data-ns-test="block-inline-input" value="Test2" readonly />
+  <span>Answer: Inline</span>
+</div>
+
+<!-- Cite: Inline -->
+<div class="block">
+  <cite data-ns-test="block-inline-cite">Test1</cite>
+  <cite data-ns-test="block-inline-cite">Test2</cite>
+  <span>Answer: Inline</span>
+</div>
+
+<!-- Code: Inline -->
+<div class="block">
+  <code data-ns-test="block-inline-code">Test1</code>
+  <code data-ns-test="block-inline-code">Test2</code>
+  <span>Answer: Inline</span>
+</div>
+
+<!-- H1: Block -->
+<div class="block">
+  <h1 data-ns-test="block-inline-h1">Test1</h1>
+  <h1 data-ns-test="block-inline-h1">Test2</h1>
+  <span>Answer: Block</span>
+</div>
+
+<!-- Sup: Inline -->
+<div class="block">
+  <sup data-ns-test="block-inline-sup">Test1</sup>
+  <sup data-ns-test="block-inline-sup">Test2</sup>
+  <span>Answer: Inline</span>
+</div>
+
+<!-- Sub: Inline -->
+<div class="block">
+  <sub data-ns-test="block-inline-sub">Test1</sub>
+  <sub data-ns-test="block-inline-sub">Test2</sub>
+  <span>Answer: Inline</span>
+</div>
 
 </body>
-
 </html>
